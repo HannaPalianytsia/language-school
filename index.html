@@ -23,7 +23,9 @@
     <header class="">
       <div class="container">
         <nav>
-          <a href="./index.html">Brit<span>lex</span></a>
+          <a class="logo" href="./index.html"
+            >Brit<span class="logo-lex">lex</span></a
+          >
           <svg class="icon-burger-menu" width="33.529" height="19">
             <use href="./images/icons.svg#icon-burger-menu"></use>
           </svg>
@@ -42,22 +44,30 @@
       <div class="backdrop">
         <div class="menu">
           <nav>
-            <div>
-              <a href="./index.html">Brit<span>lex</span></a>
-              <svg class="icon-close" width="17.016" height="17.014">
-                <use href="./images/icons.svg#icon-close"></use>
-              </svg>
+            <div class="menu-header-block">
+              <div class="menu-header">
+                <a class="logo" href="./index.html"
+                  >Brit<span class="logo-lex">lex</span></a
+                >
+                <button type="button" class="close-btn">
+                  <svg class="icon-close" width="34" height="34">
+                    <use href="./images/icons.svg#icon-close"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
             <ul>
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="">Skills</a></li>
-              <li><a href="">About Us</a></li>
-              <li><a href="">Pricing</a></li>
-              <li><a href="">Contacts</a></li>
+              <li><a class="menu-links" href="">Skills</a></li>
+              <li><a class="menu-links" href="./index.html">Home</a></li>
+              <li><a class="menu-links" href="">About Us</a></li>
+              <li><a class="menu-links" href="">Pricing</a></li>
+              <li><a class="menu-links" href="">Contacts</a></li>
             </ul>
           </nav>
           <address>
-            <button type="button">Let&acute;s Talk</button>
+            <button class="menu-contact-btn" type="button">
+              Let&prime;s Talk
+            </button>
           </address>
         </div>
       </div>
@@ -74,14 +84,32 @@
             able to make your first sketch after the first lesson.
           </p>
           <button type="button">Get started</button>
-          <svg><use></use></svg>
+          <div class="learning-languages-container">
+            <img
+              class="learning-languages"
+              srcset="
+                ./images/learning-languages.png    1x,
+                ./images/learning-languages@2x.png 2x
+              "
+              src="./images/learning-languages.png"
+              alt="Learning languages"
+            />
+          </div>
         </div>
       </section>
       <section>
         <div class="container">
           <h2>Skills</h2>
           <div>
-            <svg><use></use></svg>
+            <img
+              class="shared-goals"
+              srcset="
+                ./images/shared-goals.png    1x,
+                ./images/shared-goals@2x.png 2x
+              "
+              src="./images/shared-goals.png"
+              alt="Shared goals"
+            />
             <h3>Speaking</h3>
             <p>
               Improve your English skills and confidence. Live classes and
@@ -93,7 +121,12 @@
             <button type="button">Learn more</button>
           </div>
           <div>
-            <svg><use></use></svg>
+            <img
+              class="typewriter"
+              srcset="./images/typewriter.png 1x, ./images/typewriter@2x.png 2x"
+              src="./images/typewriter.png"
+              alt="Typewriter"
+            />
             <h3>Writing</h3>
             <p>
               One of the most important and extensive areas of natural science,
@@ -102,7 +135,15 @@
             <button type="button">Learn more</button>
           </div>
           <div>
-            <svg><use></use></svg>
+            <img
+              class="house-bookshelves"
+              srcset="
+                ./images/house-bookshelves.png    1x,
+                ./images/house-bookshelves@2x.png 2x
+              "
+              src="./images/house-bookshelves.png"
+              alt="House bookshelves"
+            />
             <h3>Reading</h3>
             <p>
               Perception and response actions of the user resulting from the use
@@ -111,7 +152,15 @@
             <button type="button">Learn more</button>
           </div>
           <div>
-            <svg><use></use></svg>
+            <img
+              class="podcast-audience"
+              srcset="
+                ./images/podcast-audience.png    1x,
+                ./images/podcast-audience@2x.png 2x
+              "
+              src="./images/podcast-audience.png"
+              alt="Podcast audience"
+            />
             <h3>Listening</h3>
             <p>
               Here you can find activities to practise your listening skills.
@@ -135,18 +184,26 @@
           <ul>
             <li>
               <p>800</p>
-              <h3>Pupils</h3>
+              <p>Pupils</p>
             </li>
             <li>
               <p>18</p>
-              <h3>Teachers</h3>
+              <p>Teachers</p>
             </li>
             <li>
               <p>6</p>
-              <h3>Foreign languages</h3>
+              <p>Foreign languages</p>
             </li>
           </ul>
-          <svg><use></use></svg>
+          <img
+            class="business-competition"
+            srcset="
+              ./images/business-competition.png    1x,
+              ./images/business-competition@2x.png 2x
+            "
+            src="./images/business-competition.png"
+            alt="Business competition"
+          />
         </div>
       </section>
       <section>
@@ -154,7 +211,12 @@
           <h2>Pricing</h2>
           <ul>
             <li>
-              <svg><use></use></svg>
+              <img
+                class="online"
+                srcset="./images/online.png 1x, ./images/online@2x.png 2x"
+                src="./images/online.png"
+                alt="Online"
+              />
               <h3>Self-study online course</h3>
               <p>
                 Start learning English online in live classes with qualified EC
@@ -163,7 +225,12 @@
               <button type="button">&pound;5.99<span> per month</span></button>
             </li>
             <li>
-              <svg><use></use></svg>
+              <img
+                class="lesson"
+                srcset="./images/lesson.png 1x, ./images/lesson@2x.png 2x"
+                src="./images/lesson.png"
+                alt="Lesson"
+              />
               <h3>Live online classes</h3>
               <p>
                 Interactive group classes with expert teachers. Free 7-day trial
@@ -171,7 +238,12 @@
               <button type="button">&pound;12.99<span> per month</span></button>
             </li>
             <li>
-              <svg><use></use></svg>
+              <img
+                class="webinar"
+                srcset="./images/webinar.png 1x, ./images/webinar@2x.png 2x"
+                src="./images/webinar.png"
+                alt="Webinar"
+              />
               <h3>Personal Tuition</h3>
               <p>
                 Online one-to-one English tutoring &ndash; enjoy our first
@@ -184,7 +256,12 @@
       </section>
       <section>
         <div class="container">
-          <svg><use></use></svg>
+          <img
+            class="contact"
+            srcset="./images/contact.png 1x, ./images/contact@2x.png 2x"
+            src="./images/contact.png"
+            alt="Contact"
+          />
           <h2>Contact Us</h2>
           <p>
             Discover your current English level by taking our free online

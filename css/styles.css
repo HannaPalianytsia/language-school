@@ -36,6 +36,58 @@ img {
   padding: 0 15px;
   margin: 0 auto;
 }
+
+/* ================= IMAGES ====================== */
+.icon-light-bulb {
+  display: none;
+}
+.learning-languages-container {
+  width: 299px;
+  height: 299px;
+  padding-top: 53px;
+}
+.learning-languages {
+  max-width: 100%;
+  object-fit: contain;
+}
+.shared-goals {
+  width: 213px;
+  height: 213px;
+}
+.typewriter {
+  width: 204px;
+  height: 204px;
+}
+.house-bookshelves {
+  width: 236px;
+  height: 157px;
+}
+.podcast-audience {
+  width: 232px;
+  height: 154px;
+}
+.business-competition {
+  width: 283px;
+  height: 283px;
+}
+.online {
+  width: 248px;
+  height: 248px;
+}
+.lesson {
+  width: 257px;
+  height: 197px;
+}
+.webinar {
+  width: 241px;
+  height: 241px;
+}
+.contact {
+  width: 253px;
+  height: 228px;
+}
+
+/* ============= MENU ================== */
 .backdrop {
   position: fixed;
   top: 0;
@@ -47,10 +99,71 @@ img {
 }
 .menu {
   background-color: #fff;
-  width: 320px;
+  width: 100%;
   height: 100%;
+  padding-left: 15px;
+  padding-top: 25px;
+  padding-right: 7px;
 }
-.icon-burger-menu,
-.icon-close {
+.icon-burger-menu {
   fill: #39515e;
+}
+.close-btn {
+  display: block;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.menu-header-block::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  height: 1px;
+  background-color: #c4c4c4;
+}
+.menu-header-block {
+  margin-bottom: 48px;
+}
+.menu-links {
+  color: #263238;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 2.95;
+}
+.menu-contact-btn {
+  width: 291px;
+  height: 65px;
+  border-radius: 5px;
+  border: 2px solid #263238;
+  background-color: transparent;
+
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin-top: 80px;
+
+  cursor: pointer;
+}
+/* ============== LOGO ============== */
+.logo {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.logo-lex {
+  color: #939393;
 }
