@@ -31,6 +31,9 @@ a {
 img {
   display: block;
 }
+button {
+  cursor: pointer;
+}
 .container {
   width: 320px;
   padding: 0 15px;
@@ -75,18 +78,22 @@ img {
 .online {
   width: 248px;
   height: 248px;
+  margin: 0 auto;
 }
 .lesson {
   width: 257px;
   height: 197px;
+  margin: 0 auto;
 }
 .webinar {
   width: 241px;
   height: 241px;
+  margin: 0 auto;
 }
 .contact {
   width: 253px;
   height: 228px;
+  margin: 0 auto;
 }
 
 /* ============= MENU ================== */
@@ -117,7 +124,6 @@ img {
   padding: 0;
   border: none;
   background-color: transparent;
-  cursor: pointer;
 }
 .menu-header {
   display: flex;
@@ -155,8 +161,6 @@ img {
   line-height: normal;
 
   margin-top: 80px;
-
-  cursor: pointer;
 }
 /* ============== LOGO ============== */
 .logo {
@@ -211,7 +215,6 @@ img {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  cursor: pointer;
 }
 
 /* =============== SKILLS SECTION ================ */
@@ -263,5 +266,176 @@ img {
   font-weight: 500;
   line-height: normal;
   transform: rotate(-0.255deg);
-  cursor: pointer;
+}
+
+/* =============== ABOUT SECTION ================ */
+.about-section {
+  padding-top: 50px;
+}
+.about-title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.33;
+  margin-bottom: 24px;
+}
+.about-text {
+  margin-top: 23px;
+  color: #8f95a5;
+  font-size: 13px;
+  font-style: normal;
+  line-height: normal;
+}
+.about-number {
+  color: #2a3246;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.33;
+}
+.about-things {
+  color: #8f95a5;
+  font-size: 15px;
+  font-style: normal;
+  line-height: normal;
+  position: relative;
+  transform: translateY(-100%);
+}
+
+/* =============== PRICING SECTION ================ */
+.pricing-section {
+  padding-top: 84px;
+}
+.pricing-title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.33;
+  margin-bottom: 49px;
+}
+.pricing-name {
+  color: #263238;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.55;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+.pricing-text {
+  color: #8f95a5;
+  font-size: 13px;
+  font-style: normal;
+  line-height: normal;
+}
+.pricing-btn {
+  margin-top: 32px;
+  margin-bottom: 72px;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 170px;
+  height: 37px;
+  border-radius: 5px;
+  background-color: #eee;
+  border: none;
+
+  color: #263238;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+  padding: 5px 15px 5px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pricing-per-month {
+  color: #546269;
+  font-size: 14px;
+}
+
+/* =============== CONTACT SECTION ================ */
+.contact-title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.33;
+  margin-bottom: 38px;
+}
+.contact-text {
+  color: #8f95a5;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+  margin-top: 38px;
+  margin-bottom: 32px;
+}
+.contact-email {
+  width: 291px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #8f95a5;
+
+  color: #8f95a5;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  padding-left: 28px;
+  margin-bottom: 17px;
+}
+.contact-btn {
+  width: 290px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: #263238;
+
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 55px;
+}
+
+/* ================== FOOTER ===================== */
+.page-footer .container {
+  padding-top: 26px;
+  padding-bottom: 48px;
+}
+.logo-footer {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+.logo-lex-footer {
+  color: #939393;
+}
+.page-footer::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  height: 1px;
+  background-color: #c4c4c4;
+}
+.policy {
+  color: #8f95a5;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.policy-list {
+  display: flex;
+  justify-content: space-between;
+}
+.privacy::before,
+.privacy::after {
+  content: "\00B7";
+  font-size: 11px;
+  margin: 0 3px;
 }

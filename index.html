@@ -179,6 +179,15 @@
       <section class="about-section">
         <div class="container">
           <h2 class="about-title">About Us</h2>
+          <img
+            class="business-competition"
+            srcset="
+              ./images/business-competition.png    1x,
+              ./images/business-competition@2x.png 2x
+            "
+            src="./images/business-competition.png"
+            alt="Business competition"
+          />
           <p class="about-text">
             The model offers a framework for discussing problems related to the
             user's experience, as well as possible ways and means of solving
@@ -189,32 +198,23 @@
           </p>
           <ul>
             <li>
-              <p>800</p>
-              <p>Pupils</p>
+              <p class="about-number">800</p>
+              <p class="about-things">Pupils</p>
             </li>
             <li>
-              <p>18</p>
-              <p>Teachers</p>
+              <p class="about-number">18</p>
+              <p class="about-things">Teachers</p>
             </li>
             <li>
-              <p>6</p>
-              <p>Foreign languages</p>
+              <p class="about-number">6</p>
+              <p class="about-things">Foreign languages</p>
             </li>
           </ul>
-          <img
-            class="business-competition"
-            srcset="
-              ./images/business-competition.png    1x,
-              ./images/business-competition@2x.png 2x
-            "
-            src="./images/business-competition.png"
-            alt="Business competition"
-          />
         </div>
       </section>
-      <section>
+      <section class="pricing-section">
         <div class="container">
-          <h2>Pricing</h2>
+          <h2 class="pricing-title">Pricing</h2>
           <ul>
             <li>
               <img
@@ -223,12 +223,14 @@
                 src="./images/online.png"
                 alt="Online"
               />
-              <h3>Self-study online course</h3>
-              <p>
+              <h3 class="pricing-name">Self-study online course</h3>
+              <p class="pricing-text">
                 Start learning English online in live classes with qualified EC
                 teachers and students from all over the world.
               </p>
-              <button type="button">&pound;5.99<span> per month</span></button>
+              <button class="pricing-btn" type="button">
+                &pound;5.99<span class="pricing-per-month"> per month</span>
+              </button>
             </li>
             <li>
               <img
@@ -237,11 +239,13 @@
                 src="./images/lesson.png"
                 alt="Lesson"
               />
-              <h3>Live online classes</h3>
-              <p>
+              <h3 class="pricing-name">Live online classes</h3>
+              <p class="pricing-text">
                 Interactive group classes with expert teachers. Free 7-day trial
               </p>
-              <button type="button">&pound;12.99<span> per month</span></button>
+              <button class="pricing-btn" type="button">
+                &pound;12.99<span class="pricing-per-month"> per month</span>
+              </button>
             </li>
             <li>
               <img
@@ -250,44 +254,52 @@
                 src="./images/webinar.png"
                 alt="Webinar"
               />
-              <h3>Personal Tuition</h3>
-              <p>
+              <h3 class="pricing-name">Personal Tuition</h3>
+              <p class="pricing-text">
                 Online one-to-one English tutoring &ndash; enjoy our first
                 session for only &dollar;1
               </p>
-              <button type="button">&pound;12.99<span> per month</span></button>
+              <button class="pricing-btn" type="button">
+                &pound;12.99<span class="pricing-per-month"> per month</span>
+              </button>
             </li>
           </ul>
         </div>
       </section>
-      <section>
+      <section class="contact-section">
         <div class="container">
+          <h2 class="contact-title">Contact Us</h2>
           <img
             class="contact"
             srcset="./images/contact.png 1x, ./images/contact@2x.png 2x"
             src="./images/contact.png"
             alt="Contact"
           />
-          <h2>Contact Us</h2>
-          <p>
+          <p class="contact-text">
             Discover your current English level by taking our free online
             English test. Sign up to our newsletter for learning tips and free
             resources
           </p>
-          <form action="">
-            <input type="email" placeholder="Enter Your E-mail" />
-            <button type="submit">Subscribe</button>
+          <form class="contact-form">
+            <input
+              class="contact-email"
+              type="email"
+              placeholder="Enter Your E-mail"
+            />
+            <button class="contact-btn" type="submit">Subscribe</button>
           </form>
         </div>
       </section>
     </main>
-    <footer class="">
+    <footer class="page-footer">
       <div class="container">
-        <a href="./index.html">Brit<span>lex</span></a>
-        <ul>
-          <li><a href="">Terms and Conditions</a></li>
-          <li><a href="">Privacy Policy</a></li>
-          <li><a href="">Cookie Policy</a></li>
+        <a class="logo-footer" href="./index.html"
+          >Brit<span class="logo-lex-footer">lex</span></a
+        >
+        <ul class="policy-list">
+          <li><a class="policy" href="">Terms and Conditions</a></li>
+          <li><a class="policy privacy" href="">Privacy Policy</a></li>
+          <li><a class="policy" href="">Cookie Policy</a></li>
         </ul>
       </div>
     </footer>
