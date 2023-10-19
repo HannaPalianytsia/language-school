@@ -36,7 +36,7 @@ button {
 }
 .container {
   width: 320px;
-  padding: 0 15px;
+  padding: 0 14px;
   margin: 0 auto;
   text-align: center;
 }
@@ -45,14 +45,9 @@ button {
 .icon-light-bulb {
   display: none;
 }
-.learning-languages-container {
-  width: 299px;
-  height: 299px;
-  padding-top: 38px;
-  padding-bottom: 12px;
-}
 .learning-languages {
-  max-width: 100%;
+  width: 299px;
+  height: auto;
   object-fit: contain;
 }
 .shared-goals {
@@ -104,9 +99,6 @@ button {
   padding-left: 15px;
   padding-top: 25px;
   padding-right: 7px;
-}
-.icon-burger-menu {
-  fill: #39515e;
 }
 .close-btn {
   display: block;
@@ -160,16 +152,19 @@ button {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  position: absolute;
+  left: 0;
 }
 .logo-lex {
   color: #939393;
 }
 
 /* =================== HEADER ==================== */
-.header-navigation {
+/* .header-navigation {
   display: flex;
   justify-content: space-between;
-}
+  align-items: center;
+} */
 .header-navigation-list,
 .header-button {
   display: none;
@@ -178,6 +173,23 @@ button {
   padding-top: 36px;
   padding-bottom: 29px;
 }
+.icon-burger-menu {
+  fill: #39515e;
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+.header-navigation {
+  position: fixed;
+  top: 0;
+  width: 320px;
+  height: 65px;
+  background-color: #fff;
+}
+.header-navigation-container {
+  position: relative;
+  top: 15px;
+}
 
 /* =================== FIRST SECTION ========================== */
 .main-title {
@@ -185,7 +197,7 @@ button {
   font-style: normal;
   font-weight: 600;
   line-height: 1.5;
-  margin-bottom: 20px;
+  padding: 16px 37px 20px 37px;
 }
 .main-text {
   color: #8f95a5;
@@ -256,7 +268,6 @@ button {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  transform: rotate(-0.255deg);
 }
 
 /* =============== ABOUT SECTION ================ */
@@ -272,10 +283,12 @@ button {
 }
 .about-text {
   margin-top: 23px;
+  margin-bottom: 8px;
   color: #8f95a5;
   font-size: 13px;
   font-style: normal;
   line-height: normal;
+  width: 295px;
 }
 .about-number {
   color: #2a3246;
@@ -289,13 +302,11 @@ button {
   font-size: 15px;
   font-style: normal;
   line-height: normal;
-  position: relative;
-  transform: translateY(-100%);
 }
 
 /* =============== PRICING SECTION ================ */
 .pricing-section {
-  padding-top: 84px;
+  padding-top: 80px;
 }
 .pricing-title {
   font-size: 24px;
