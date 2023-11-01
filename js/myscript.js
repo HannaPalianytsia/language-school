@@ -13,3 +13,13 @@
 // document.getElementById("get-started-btn").addEventListener("click", function () {
 //     document.getElementById("main-text").textContent = "Новий текст";
 // });
+
+'use strict';
+
+console.log(); //для виведення інформації з коду в консоль інструментів розробника
+
+const age = 20; //оголошення змінної (перевизначити її значення неможливо)
+console.log(age); // 20
+
+let username = "Mango"; //оголошення змінної, якій згодом можна задати нове значення
+username = "Poly";
